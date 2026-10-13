@@ -5,7 +5,7 @@ import {
   getChat,
   updateChatTitle,
 } from "@/lib/persistence-layer";
-import { google } from "@ai-sdk/google";
+import { deepseek } from "@ai-sdk/deepseek";
 import {
   convertToModelMessages,
   createUIMessageStream,
@@ -91,7 +91,7 @@ export async function POST(req: Request) {
       }
 
       const result = streamText({
-        model: google("gemini-2.5-flash-lite"),
+        model: deepseek("deepseek-flash"),
         messages: convertToModelMessages(messages),
       });
 

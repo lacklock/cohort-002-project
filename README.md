@@ -25,7 +25,7 @@ During this workshop, you'll add these capabilities to your assistant:
 
 - Node.js (v20 or higher)
 - pnpm package manager
-- API keys for AI providers (Google/Anthropic/OpenAI)
+- DeepSeek API key
 - Completed AI SDK v5 Crash Course (workshop pre-requisite)
 
 ### Installation
@@ -39,7 +39,7 @@ pnpm install
 2. Set up environment variables (`.env.local`):
 
 ```bash
-GOOGLE_GENERATIVE_AI_API_KEY=your_key_here
+DEEPSEEK_API_KEY=your_key_here
 ANTHROPIC_API_KEY=your_key_here  # optional
 OPENAI_API_KEY=your_key_here      # optional
 ```
@@ -74,7 +74,7 @@ You'll add during workshop:
 
 - **Framework**: Next.js 15 (App Router + Turbopack)
 - **AI SDK**: Vercel AI SDK v5 (provider-agnostic)
-- **Models**: Google Gemini 2.5 Flash (default), Claude, GPT-4
+- **Models**: DeepSeek Flash (`deepseek-flash`, default)
 - **UI**: Radix UI + Tailwind CSS 4
 - **TypeScript**: Full type safety
 
